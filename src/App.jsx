@@ -31,7 +31,7 @@ const COLOR_HEX = {
   "Melange Plata": "#b0b0b0", "Naranja Neón": "#ff7a1f", "Navy Oscuro": "#0f1a30", "Plata": "#b8b8b8",
   "Quarry": "#8a8a82", "Rosa Fuerte": "#e0529c", "Rosa Neón": "#ff3fb0", "Tan": "#c9a878",
   "Verde Kelly": "#2e8b3a", "Verde Neón": "#39ff14", "Verde Olivo": "#5a6b3a", "Verde Oscuro": "#1c4d2e",
-  "Ámbar": "#c9941f",
+  "Ámbar": "#c9941f", "Beige": "#d9c9a8",
 };
 
 function getPrimaryHex(colorName) {
@@ -134,96 +134,122 @@ const PRODUCTS = [
   { id: 79, name: "Richardson 112 Azul Rey/Negro", model: "112", category: "Trucker", color: "Azul Rey/Negro" },
   { id: 80, name: "Richardson 112 Azul Rey/Heather/Blanco", model: "112", category: "Trucker", color: "Azul Rey/Heather/Blanco" },
   { id: 81, name: "Richardson 112 Azul Rey/Blanco/Rojo", model: "112", category: "Trucker", color: "Azul Rey/Blanco/Rojo" },
-  { id: 82, name: "Richardson 112 Loden/Negro", model: "112", category: "Trucker", color: "Loden/Negro" },
-  { id: 83, name: "Richardson 112 Ámbar", model: "112", category: "Trucker", color: "Ámbar" },
-  { id: 84, name: "Richardson 112 Negro/Gris", model: "112", category: "Trucker", color: "Negro/Gris" },
-  { id: 85, name: "Richardson 112 Azul", model: "112", category: "Trucker", color: "Azul" },
-  { id: 86, name: "Richardson 112 Café/Khaki", model: "112", category: "Trucker", color: "Café/Khaki" },
-  { id: 87, name: "Richardson 112 Café", model: "112", category: "Trucker", color: "Café" },
-  { id: 88, name: "Richardson 112 Crema/Negro/Loden", model: "112", category: "Trucker", color: "Crema/Negro/Loden" },
-  { id: 89, name: "Richardson 112 Crema/Gris/Café", model: "112", category: "Trucker", color: "Crema/Gris/Café" },
-  { id: 90, name: "Richardson 112 Crema/Negro/Ámbar", model: "112", category: "Trucker", color: "Crema/Negro/Ámbar" },
-  { id: 91, name: "Richardson 112 Crema", model: "112", category: "Trucker", color: "Crema" },
-  { id: 92, name: "Richardson 112 Gun Metal/Chocolate", model: "112", category: "Trucker", color: "Gun Metal/Chocolate" },
-  { id: 93, name: "Richardson 112 Khaki/Negro", model: "112", category: "Trucker", color: "Khaki/Negro" },
-  { id: 94, name: "Richardson 112 Khaki/Azul", model: "112", category: "Trucker", color: "Khaki/Azul" },
-  { id: 95, name: "Richardson 112 Khaki/Chocolate", model: "112", category: "Trucker", color: "Khaki/Chocolate" },
-  { id: 96, name: "Richardson 112 Khaki/Loden", model: "112", category: "Trucker", color: "Khaki/Loden" },
-  { id: 97, name: "Richardson 112 Khaki/Navy", model: "112", category: "Trucker", color: "Khaki/Navy" },
-  { id: 98, name: "Richardson 112 Verde Kelly", model: "112", category: "Trucker", color: "Verde Kelly" },
-  { id: 99, name: "Richardson 112 Azul Claro/Gris Claro", model: "112", category: "Trucker", color: "Azul Claro/Gris Claro" },
-  { id: 100, name: "Richardson 112 Gris Claro/Gun Metal", model: "112", category: "Trucker", color: "Gris Claro/Gun Metal" },
-  { id: 101, name: "Richardson 112 Gris Claro", model: "112", category: "Trucker", color: "Gris Claro" },
-  { id: 102, name: "Richardson 112 Marrón", model: "112", category: "Trucker", color: "Marrón" },
-  { id: 103, name: "Richardson 112 Navy/Khaki", model: "112", category: "Trucker", color: "Navy/Khaki" },
-  { id: 104, name: "Richardson 112 Quarry", model: "112", category: "Trucker", color: "Quarry" },
-  { id: 105, name: "Richardson 112 Humo", model: "112", category: "Trucker", color: "Humo" },
-  { id: 106, name: "Richardson 112 Blanco/Aluminio/Negro", model: "112", category: "Trucker", color: "Blanco/Aluminio/Negro" },
-  { id: 107, name: "Richardson 112 Blanco/Aluminio/Navy", model: "112", category: "Trucker", color: "Blanco/Aluminio/Navy" },
-  { id: 108, name: "Richardson 112 Blanco/Negro", model: "112", category: "Trucker", color: "Blanco/Negro" },
-  { id: 109, name: "Richardson 112 Blanco/Gris Oscuro", model: "112", category: "Trucker", color: "Blanco/Gris Oscuro" },
-  { id: 110, name: "Richardson 112 Blanco/Azul Columbia", model: "112", category: "Trucker", color: "Blanco/Azul Columbia" },
-  { id: 111, name: "Richardson 112 Blanco/Verde Kelly", model: "112", category: "Trucker", color: "Blanco/Verde Kelly" },
-  { id: 112, name: "Richardson 112 Blanco/Navy", model: "112", category: "Trucker", color: "Blanco/Navy" },
-  { id: 113, name: "Richardson 112 Blanco/Rojo", model: "112", category: "Trucker", color: "Blanco/Rojo" },
-  { id: 114, name: "Richardson 112 Blanco/Azul Rey", model: "112", category: "Trucker", color: "Blanco/Azul Rey" },
+  { id: 82, name: "Richardson 112 Azul Rey/Blanco", model: "112", category: "Trucker", color: "Azul Rey/Blanco" },
+  { id: 83, name: "Richardson 112 Caramelo/Negro", model: "112", category: "Trucker", color: "Caramelo/Negro" },
+  { id: 84, name: "Richardson 112 Chocolate/Birch", model: "112", category: "Trucker", color: "Chocolate/Birch" },
+  { id: 85, name: "Richardson 112 Navy/Caramelo", model: "112", category: "Trucker", color: "Navy/Caramelo" },
+  { id: 86, name: "Richardson 112 Navy/Khaki/Caramelo", model: "112", category: "Trucker", color: "Navy/Khaki/Caramelo" },
+  { id: 87, name: "Richardson 112 Azul Verdoso/Birch/Navy", model: "112", category: "Trucker", color: "Azul Verdoso/Birch/Navy" },
+  { id: 88, name: "Richardson 112 Heather/Birch/Ámbar", model: "112", category: "Trucker", color: "Heather/Birch/Ámbar" },
+  { id: 89, name: "Richardson 112 Heather/Birch/Verde Olivo", model: "112", category: "Trucker", color: "Heather/Birch/Verde Olivo" },
+  { id: 90, name: "Richardson 112 Beige/Gris Oscuro/Ámbar", model: "112", category: "Trucker", color: "Beige/Gris Oscuro/Ámbar" },
+  { id: 91, name: "Richardson 112 Blanco/Azul Columbia/Amarillo", model: "112", category: "Trucker", color: "Blanco/Azul Columbia/Amarillo" },
+  { id: 92, name: "Richardson 112 Loden/Negro", model: "112", category: "Trucker", color: "Loden/Negro" },
+  { id: 93, name: "Richardson 112 Ámbar", model: "112", category: "Trucker", color: "Ámbar" },
+  { id: 94, name: "Richardson 112 Negro/Gris", model: "112", category: "Trucker", color: "Negro/Gris" },
+  { id: 95, name: "Richardson 112 Azul", model: "112", category: "Trucker", color: "Azul" },
+  { id: 96, name: "Richardson 112 Café/Khaki", model: "112", category: "Trucker", color: "Café/Khaki" },
+  { id: 97, name: "Richardson 112 Café", model: "112", category: "Trucker", color: "Café" },
+  { id: 98, name: "Richardson 112 Crema/Negro/Loden", model: "112", category: "Trucker", color: "Crema/Negro/Loden" },
+  { id: 99, name: "Richardson 112 Crema/Gris/Café", model: "112", category: "Trucker", color: "Crema/Gris/Café" },
+  { id: 100, name: "Richardson 112 Crema/Negro/Ámbar", model: "112", category: "Trucker", color: "Crema/Negro/Ámbar" },
+  { id: 101, name: "Richardson 112 Crema", model: "112", category: "Trucker", color: "Crema" },
+  { id: 102, name: "Richardson 112 Gun Metal/Chocolate", model: "112", category: "Trucker", color: "Gun Metal/Chocolate" },
+  { id: 103, name: "Richardson 112 Khaki/Negro", model: "112", category: "Trucker", color: "Khaki/Negro" },
+  { id: 104, name: "Richardson 112 Khaki/Azul", model: "112", category: "Trucker", color: "Khaki/Azul" },
+  { id: 105, name: "Richardson 112 Khaki/Chocolate", model: "112", category: "Trucker", color: "Khaki/Chocolate" },
+  { id: 106, name: "Richardson 112 Khaki/Loden", model: "112", category: "Trucker", color: "Khaki/Loden" },
+  { id: 107, name: "Richardson 112 Khaki/Navy", model: "112", category: "Trucker", color: "Khaki/Navy" },
+  { id: 108, name: "Richardson 112 Verde Kelly", model: "112", category: "Trucker", color: "Verde Kelly" },
+  { id: 109, name: "Richardson 112 Azul Claro/Gris Claro", model: "112", category: "Trucker", color: "Azul Claro/Gris Claro" },
+  { id: 110, name: "Richardson 112 Gris Claro/Gun Metal", model: "112", category: "Trucker", color: "Gris Claro/Gun Metal" },
+  { id: 111, name: "Richardson 112 Gris Claro", model: "112", category: "Trucker", color: "Gris Claro" },
+  { id: 112, name: "Richardson 112 Marrón", model: "112", category: "Trucker", color: "Marrón" },
+  { id: 113, name: "Richardson 112 Navy/Khaki", model: "112", category: "Trucker", color: "Navy/Khaki" },
+  { id: 114, name: "Richardson 112 Quarry", model: "112", category: "Trucker", color: "Quarry" },
+  { id: 115, name: "Richardson 112 Humo", model: "112", category: "Trucker", color: "Humo" },
+  { id: 116, name: "Richardson 112 Blanco/Aluminio/Negro", model: "112", category: "Trucker", color: "Blanco/Aluminio/Negro" },
+  { id: 117, name: "Richardson 112 Blanco/Aluminio/Navy", model: "112", category: "Trucker", color: "Blanco/Aluminio/Navy" },
+  { id: 118, name: "Richardson 112 Blanco/Negro", model: "112", category: "Trucker", color: "Blanco/Negro" },
+  { id: 119, name: "Richardson 112 Blanco/Gris Oscuro", model: "112", category: "Trucker", color: "Blanco/Gris Oscuro" },
+  { id: 120, name: "Richardson 112 Blanco/Azul Columbia", model: "112", category: "Trucker", color: "Blanco/Azul Columbia" },
+  { id: 121, name: "Richardson 112 Blanco/Verde Kelly", model: "112", category: "Trucker", color: "Blanco/Verde Kelly" },
+  { id: 122, name: "Richardson 112 Blanco/Navy", model: "112", category: "Trucker", color: "Blanco/Navy" },
+  { id: 123, name: "Richardson 112 Blanco/Rojo", model: "112", category: "Trucker", color: "Blanco/Rojo" },
+  { id: 124, name: "Richardson 112 Blanco/Azul Rey", model: "112", category: "Trucker", color: "Blanco/Azul Rey" },
   // ---- Modelo 112FP (agregado) ----
-  { id: 115, name: "Richardson 112FP Verde Olivo/Khaki", model: "112FP", category: "Trucker", color: "Verde Olivo/Khaki" },
-  { id: 116, name: "Richardson 112FP Cardinal/Tan", model: "112FP", category: "Trucker", color: "Cardinal/Tan" },
-  { id: 117, name: "Richardson 112FP Gris Oscuro/Negro", model: "112FP", category: "Trucker", color: "Gris Oscuro/Negro" },
-  { id: 118, name: "Richardson 112FP Quarry", model: "112FP", category: "Trucker", color: "Quarry" },
-  { id: 119, name: "Richardson 112FP Negro", model: "112FP", category: "Trucker", color: "Negro" },
-  { id: 120, name: "Richardson 112FP Negro/Blanco", model: "112FP", category: "Trucker", color: "Negro/Blanco" },
-  { id: 121, name: "Richardson 112FP Azul Verdoso/Navy", model: "112FP", category: "Trucker", color: "Azul Verdoso/Navy" },
-  { id: 122, name: "Richardson 112FP Navy/Navy Oscuro", model: "112FP", category: "Trucker", color: "Navy/Navy Oscuro" },
-  { id: 123, name: "Richardson 112FP Gris Oscuro/Blanco", model: "112FP", category: "Trucker", color: "Gris Oscuro/Blanco" },
-  { id: 124, name: "Richardson 112FP Chocolate/Birch", model: "112FP", category: "Trucker", color: "Chocolate/Birch" },
-  { id: 125, name: "Richardson 112FP Azul Cobalto/Gris", model: "112FP", category: "Trucker", color: "Azul Cobalto/Gris" },
-  { id: 126, name: "Richardson 112FP Heather/Birch/Verde Olivo", model: "112FP", category: "Trucker", color: "Heather/Birch/Verde Olivo" },
-  { id: 127, name: "Richardson 112FP Heather/Ámbar", model: "112FP", category: "Trucker", color: "Heather/Ámbar" },
-  { id: 128, name: "Richardson 112FP Heather/Negro", model: "112FP", category: "Trucker", color: "Heather/Negro" },
-  { id: 129, name: "Richardson 112FP Khaki/Café", model: "112FP", category: "Trucker", color: "Khaki/Café" },
-  { id: 130, name: "Richardson 112FP Navy/Blanco", model: "112FP", category: "Trucker", color: "Navy/Blanco" },
-  { id: 131, name: "Richardson 112FP Verde Olivo/Negro", model: "112FP", category: "Trucker", color: "Verde Olivo/Negro" },
-  { id: 132, name: "Richardson 112FP Khaki Pálido/Loden", model: "112FP", category: "Trucker", color: "Khaki Pálido/Loden" },
-  { id: 133, name: "Richardson 112FP Blanco", model: "112FP", category: "Trucker", color: "Blanco" },
+  { id: 125, name: "Richardson 112FP Verde Olivo/Khaki", model: "112FP", category: "Trucker", color: "Verde Olivo/Khaki" },
+  { id: 126, name: "Richardson 112FP Cardinal/Tan", model: "112FP", category: "Trucker", color: "Cardinal/Tan" },
+  { id: 127, name: "Richardson 112FP Gris Oscuro/Negro", model: "112FP", category: "Trucker", color: "Gris Oscuro/Negro" },
+  { id: 128, name: "Richardson 112FP Quarry", model: "112FP", category: "Trucker", color: "Quarry" },
+  { id: 129, name: "Richardson 112FP Negro", model: "112FP", category: "Trucker", color: "Negro" },
+  { id: 130, name: "Richardson 112FP Negro/Blanco", model: "112FP", category: "Trucker", color: "Negro/Blanco" },
+  { id: 131, name: "Richardson 112FP Azul Verdoso/Navy", model: "112FP", category: "Trucker", color: "Azul Verdoso/Navy" },
+  { id: 132, name: "Richardson 112FP Navy/Navy Oscuro", model: "112FP", category: "Trucker", color: "Navy/Navy Oscuro" },
+  { id: 133, name: "Richardson 112FP Gris Oscuro/Blanco", model: "112FP", category: "Trucker", color: "Gris Oscuro/Blanco" },
+  { id: 134, name: "Richardson 112FP Chocolate/Birch", model: "112FP", category: "Trucker", color: "Chocolate/Birch" },
+  { id: 135, name: "Richardson 112FP Azul Cobalto/Gris", model: "112FP", category: "Trucker", color: "Azul Cobalto/Gris" },
+  { id: 136, name: "Richardson 112FP Heather/Birch/Verde Olivo", model: "112FP", category: "Trucker", color: "Heather/Birch/Verde Olivo" },
+  { id: 137, name: "Richardson 112FP Heather/Ámbar", model: "112FP", category: "Trucker", color: "Heather/Ámbar" },
+  { id: 138, name: "Richardson 112FP Heather/Negro", model: "112FP", category: "Trucker", color: "Heather/Negro" },
+  { id: 139, name: "Richardson 112FP Khaki/Café", model: "112FP", category: "Trucker", color: "Khaki/Café" },
+  { id: 140, name: "Richardson 112FP Navy/Blanco", model: "112FP", category: "Trucker", color: "Navy/Blanco" },
+  { id: 141, name: "Richardson 112FP Verde Olivo/Negro", model: "112FP", category: "Trucker", color: "Verde Olivo/Negro" },
+  { id: 142, name: "Richardson 112FP Khaki Pálido/Loden", model: "112FP", category: "Trucker", color: "Khaki Pálido/Loden" },
+  { id: 143, name: "Richardson 112FP Blanco", model: "112FP", category: "Trucker", color: "Blanco" },
   // ---- Flexfit 110 (agregado) ----
-  { id: 134, name: "Richardson Flexfit Negro", model: "Flexfit", category: "Trucker", color: "Negro" },
-  { id: 135, name: "Richardson Flexfit Negro/Blanco", model: "Flexfit", category: "Trucker", color: "Negro/Blanco" },
-  { id: 136, name: "Richardson Flexfit Café/Khaki", model: "Flexfit", category: "Trucker", color: "Café/Khaki" },
-  { id: 137, name: "Richardson Flexfit Caramelo", model: "Flexfit", category: "Trucker", color: "Caramelo" },
-  { id: 138, name: "Richardson Flexfit Caramelo/Khaki", model: "Flexfit", category: "Trucker", color: "Caramelo/Khaki" },
-  { id: 139, name: "Richardson Flexfit Gris Oscuro", model: "Flexfit", category: "Trucker", color: "Gris Oscuro" },
-  { id: 140, name: "Richardson Flexfit Gris Oscuro/Negro", model: "Flexfit", category: "Trucker", color: "Gris Oscuro/Negro" },
-  { id: 141, name: "Richardson Flexfit Gris Oscuro/Blanco", model: "Flexfit", category: "Trucker", color: "Gris Oscuro/Blanco" },
-  { id: 142, name: "Richardson Flexfit Café Coyote/Negro", model: "Flexfit", category: "Trucker", color: "Café Coyote/Negro" },
-  { id: 143, name: "Richardson Flexfit Café Coyote/Khaki", model: "Flexfit", category: "Trucker", color: "Café Coyote/Khaki" },
-  { id: 144, name: "Richardson Flexfit Gris Oscuro", model: "Flexfit", category: "Trucker", color: "Gris Oscuro" },
-  { id: 145, name: "Richardson Flexfit Heather/Negro", model: "Flexfit", category: "Trucker", color: "Heather/Negro" },
-  { id: 146, name: "Richardson Flexfit Heather/Blanco", model: "Flexfit", category: "Trucker", color: "Heather/Blanco" },
-  { id: 147, name: "Richardson Flexfit Khaki", model: "Flexfit", category: "Trucker", color: "Khaki" },
-  { id: 148, name: "Richardson Flexfit Melange Plata/Blanco", model: "Flexfit", category: "Trucker", color: "Melange Plata/Blanco" },
-  { id: 149, name: "Richardson Flexfit Melange Gris Oscuro/Negro", model: "Flexfit", category: "Trucker", color: "Melange Gris Oscuro/Negro" },
-  { id: 150, name: "Richardson Flexfit Navy", model: "Flexfit", category: "Trucker", color: "Navy" },
-  { id: 151, name: "Richardson Flexfit Navy/Blanco", model: "Flexfit", category: "Trucker", color: "Navy/Blanco" },
-  { id: 152, name: "Richardson Flexfit Verde Olivo/Khaki", model: "Flexfit", category: "Trucker", color: "Verde Olivo/Khaki" },
-  { id: 153, name: "Richardson Flexfit Rojo", model: "Flexfit", category: "Trucker", color: "Rojo" },
-  { id: 154, name: "Richardson Flexfit Rojo/Blanco", model: "Flexfit", category: "Trucker", color: "Rojo/Blanco" },
-  { id: 155, name: "Richardson Flexfit Azul Rey/Blanco", model: "Flexfit", category: "Trucker", color: "Azul Rey/Blanco" },
-  { id: 156, name: "Richardson Flexfit Plata", model: "Flexfit", category: "Trucker", color: "Plata" },
-  { id: 157, name: "Richardson Flexfit Blanco/Gris", model: "Flexfit", category: "Trucker", color: "Blanco/Gris" },
-  { id: 158, name: "Richardson Flexfit Blanco/Navy", model: "Flexfit", category: "Trucker", color: "Blanco/Navy" },
-  { id: 159, name: "Richardson Flexfit Blanco/Negro", model: "Flexfit", category: "Trucker", color: "Blanco/Negro" },
-  { id: 160, name: "Richardson Flexfit Blanco", model: "Flexfit", category: "Trucker", color: "Blanco" },
+  { id: 144, name: "Richardson Flexfit Negro", model: "Flexfit", category: "Trucker", color: "Negro" },
+  { id: 145, name: "Richardson Flexfit Negro/Blanco", model: "Flexfit", category: "Trucker", color: "Negro/Blanco" },
+  { id: 146, name: "Richardson Flexfit Café/Khaki", model: "Flexfit", category: "Trucker", color: "Café/Khaki" },
+  { id: 147, name: "Richardson Flexfit Caramelo", model: "Flexfit", category: "Trucker", color: "Caramelo" },
+  { id: 148, name: "Richardson Flexfit Caramelo/Khaki", model: "Flexfit", category: "Trucker", color: "Caramelo/Khaki" },
+  { id: 149, name: "Richardson Flexfit Gris Oscuro", model: "Flexfit", category: "Trucker", color: "Gris Oscuro" },
+  { id: 150, name: "Richardson Flexfit Gris Oscuro/Negro", model: "Flexfit", category: "Trucker", color: "Gris Oscuro/Negro" },
+  { id: 151, name: "Richardson Flexfit Gris Oscuro/Blanco", model: "Flexfit", category: "Trucker", color: "Gris Oscuro/Blanco" },
+  { id: 152, name: "Richardson Flexfit Café Coyote/Negro", model: "Flexfit", category: "Trucker", color: "Café Coyote/Negro" },
+  { id: 153, name: "Richardson Flexfit Café Coyote/Khaki", model: "Flexfit", category: "Trucker", color: "Café Coyote/Khaki" },
+  { id: 154, name: "Richardson Flexfit Gris Oscuro", model: "Flexfit", category: "Trucker", color: "Gris Oscuro" },
+  { id: 155, name: "Richardson Flexfit Heather/Negro", model: "Flexfit", category: "Trucker", color: "Heather/Negro" },
+  { id: 156, name: "Richardson Flexfit Heather/Blanco", model: "Flexfit", category: "Trucker", color: "Heather/Blanco" },
+  { id: 157, name: "Richardson Flexfit Khaki", model: "Flexfit", category: "Trucker", color: "Khaki" },
+  { id: 158, name: "Richardson Flexfit Melange Plata/Blanco", model: "Flexfit", category: "Trucker", color: "Melange Plata/Blanco" },
+  { id: 159, name: "Richardson Flexfit Melange Gris Oscuro/Negro", model: "Flexfit", category: "Trucker", color: "Melange Gris Oscuro/Negro" },
+  { id: 160, name: "Richardson Flexfit Navy", model: "Flexfit", category: "Trucker", color: "Navy" },
+  { id: 161, name: "Richardson Flexfit Navy/Blanco", model: "Flexfit", category: "Trucker", color: "Navy/Blanco" },
+  { id: 162, name: "Richardson Flexfit Verde Olivo/Khaki", model: "Flexfit", category: "Trucker", color: "Verde Olivo/Khaki" },
+  { id: 163, name: "Richardson Flexfit Rojo", model: "Flexfit", category: "Trucker", color: "Rojo" },
+  { id: 164, name: "Richardson Flexfit Rojo/Blanco", model: "Flexfit", category: "Trucker", color: "Rojo/Blanco" },
+  { id: 165, name: "Richardson Flexfit Azul Rey/Blanco", model: "Flexfit", category: "Trucker", color: "Azul Rey/Blanco" },
+  { id: 166, name: "Richardson Flexfit Plata", model: "Flexfit", category: "Trucker", color: "Plata" },
+  { id: 167, name: "Richardson Flexfit Blanco/Gris", model: "Flexfit", category: "Trucker", color: "Blanco/Gris" },
+  { id: 168, name: "Richardson Flexfit Blanco/Navy", model: "Flexfit", category: "Trucker", color: "Blanco/Navy" },
+  { id: 169, name: "Richardson Flexfit Blanco/Negro", model: "Flexfit", category: "Trucker", color: "Blanco/Negro" },
+  { id: 170, name: "Richardson Flexfit Blanco", model: "Flexfit", category: "Trucker", color: "Blanco" },
 ];
 
 const MODELS = ["Todos", "112", "112FP", "Flexfit"];
 const CATEGORIES_BASE = ["Todos"];
 
-function CapThumb({ color, model, size = "normal" }) {
+function CapThumb({ id, color, model, size = "normal" }) {
+  const [imgFailed, setImgFailed] = useState(false);
   const hex1 = getPrimaryHex(color);
   const hex2 = getSecondaryHex(color);
   const dim = size === "small" ? "w-16 h-16" : "w-full h-full";
+
+  if (id && !imgFailed) {
+    return (
+      <div className={`${dim} flex items-center justify-center bg-white relative`}>
+        <img
+          src={`/images/${id}.jpg`}
+          alt={`${model} ${color}`}
+          className="w-full h-full object-cover"
+          onError={() => setImgFailed(true)}
+        />
+        <span className="absolute bottom-1 right-1 text-[9px] font-bold text-neutral-400 bg-white/80 rounded px-1">{model}</span>
+      </div>
+    );
+  }
+
   return (
     <div className={`${dim} flex items-center justify-center bg-white relative`}>
       <svg viewBox="0 0 100 100" className={size === "small" ? "w-12 h-12" : "w-2/3 h-2/3"}>
@@ -398,7 +424,7 @@ export default function App() {
             {filtered.map(product => (
               <div key={product.id} className="group bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 hover:border-yellow-400/50 transition-all duration-300 hover:-translate-y-1">
                 <div className="aspect-square overflow-hidden cursor-pointer" onClick={() => setSelectedProduct(product)}>
-                  <CapThumb color={product.color} model={product.model} />
+                  <CapThumb id={product.id} color={product.color} model={product.model} />
                 </div>
                 <div className="p-3 sm:p-4">
                   <p className="text-[10px] uppercase tracking-wider text-yellow-400 font-bold mb-1">{product.model}</p>
@@ -440,7 +466,7 @@ export default function App() {
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setSelectedProduct(null)}>
           <div className="bg-neutral-900 rounded-2xl max-w-2xl w-full overflow-hidden border border-neutral-800 max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
             <div className="relative bg-white aspect-square">
-              <CapThumb color={selectedProduct.color} model={selectedProduct.model} />
+              <CapThumb id={selectedProduct.id} color={selectedProduct.color} model={selectedProduct.model} />
               <button onClick={() => setSelectedProduct(null)} className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 rounded-full p-2 transition-colors text-white">
                 <X size={20} />
               </button>
@@ -481,7 +507,7 @@ export default function App() {
                   {cart.map(item => (
                     <div key={item.id} className="flex gap-3 bg-neutral-900 rounded-xl p-3 border border-neutral-800">
                       <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                        <CapThumb color={item.color} model={item.model} size="small" />
+                        <CapThumb id={item.id} color={item.color} model={item.model} size="small" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="font-bold text-sm truncate">{item.name}</p>
